@@ -3,9 +3,11 @@
 ## Usage Example
 
 ```php
+use NtkAndr\MultiException;
+
 function checkPassword($passwd): bool
 {
-    $errors = new \NtkAndr\MultiException();
+    $errors = new MultiException();
     if (empty($passwd)) {
         $errors->add(new Exception('Empty password'));
     }
@@ -23,7 +25,7 @@ function checkPassword($passwd): bool
 
 try {
     checkPassword('');
-} catch (\NtkAndr\MultiException $errors) {
+} catch (MultiException $errors) {
     foreach ($errors as $error) {
         echo $error->getMessage() . "\n";
     }
