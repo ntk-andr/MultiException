@@ -1,0 +1,24 @@
+{
+    "name": "NtkAndr/MultiException",
+    "description": "MultiException",
+    "homepage": "https://github.com/ntk-andr/MultiException/",
+    "keywords": [
+        "multiexception"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Usov",
+            "email": "nkt.andr@gmail.com",
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NtkAndr\\": "src/"
+        }
+    }
+}
